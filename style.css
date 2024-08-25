@@ -1,0 +1,205 @@
+/*Barra de navegacion*/
+
+.navbar {
+    padding: 2rem;
+    background-color: #1b1b32;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Estilos Generales*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;  
+    font-family: "Rubik Dirt", system-ui;  
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+.seccion-texto{
+    font-size: 1.5rem;
+}
+
+/* Seccion Hero*/
+
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+/* Sobre mi */
+
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero-imagen-desarrollador{
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     margin: 2%;
+}
+
+.hero-principal h2 {
+    font-size:1.5rem;
+    color: #615151;
+}
+
+/* experiencia */
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+.badge-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+/*Contacto*/
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -2rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Pie de Pagina (footer) */
+
+footer{
+    min-height: 100px;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253); 
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+
+.derechos-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}
